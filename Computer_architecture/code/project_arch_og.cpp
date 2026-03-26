@@ -22,7 +22,7 @@ void multiply_2D_naive(int N, const vector<vector<double>>& A,
 }
 
 int main() {
-    int N = 1024; 
+    int N = 2048; 
 
     cout << "Δέσμευση μνήμης για πίνακες " << N << "x" << N << "..." << endl;
 
