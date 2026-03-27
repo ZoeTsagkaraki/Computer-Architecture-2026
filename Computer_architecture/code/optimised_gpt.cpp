@@ -38,7 +38,7 @@ void multiply_optimized(int N, const vector<double>& A,
 }
 
 int main() {
-    int N = 2048;
+    int N = 4096;
 
     cout << "Allocating memory..." << endl;
 

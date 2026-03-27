@@ -19,7 +19,7 @@ void multiply_2D_naive(int N, const vector<vector<double>>& A,
 }
 
 int main() {
-    int N = 2048; 
+    int N = 16384; 
 
     cout << "Allocating memory for matrices of size " << N << "x" << N << "..." << endl;
 
