@@ -1,0 +1,79 @@
+num_threads,matrix_size,execution_time_ms
+1,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3423 ms
+Threads: 2 	| Time: 1974 ms
+Threads: 4 	| Time: 1125 ms
+Threads: 8 	| Time: 787 ms
+Threads: 12 	| Time: 633 ms
+Threads: 16 	| Time: 491 ms
+Threads: 20 	| Time: 501 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!
+2,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3525 ms
+Threads: 2 	| Time: 1955 ms
+Threads: 4 	| Time: 1129 ms
+Threads: 8 	| Time: 768 ms
+Threads: 12 	| Time: 600 ms
+Threads: 16 	| Time: 495 ms
+Threads: 20 	| Time: 518 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!
+4,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3480 ms
+Threads: 2 	| Time: 1965 ms
+Threads: 4 	| Time: 1112 ms
+Threads: 8 	| Time: 788 ms
+Threads: 12 	| Time: 619 ms
+Threads: 16 	| Time: 476 ms
+Threads: 20 	| Time: 524 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!
+8,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3534 ms
+Threads: 2 	| Time: 1919 ms
+Threads: 4 	| Time: 1144 ms
+Threads: 8 	| Time: 786 ms
+Threads: 12 	| Time: 606 ms
+Threads: 16 	| Time: 489 ms
+Threads: 20 	| Time: 508 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!
+16,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3530 ms
+Threads: 2 	| Time: 1984 ms
+Threads: 4 	| Time: 1148 ms
+Threads: 8 	| Time: 774 ms
+Threads: 12 	| Time: 598 ms
+Threads: 16 	| Time: 491 ms
+Threads: 20 	| Time: 508 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!
+20,2048,Allocating memory for 2D matrices (2048x2048)...
+
+--- Starting the Benchmark (Scalability Test) ---
+Threads: 1 	| Time: 3428 ms
+Threads: 2 	| Time: 1949 ms
+Threads: 4 	| Time: 1162 ms
+Threads: 8 	| Time: 757 ms
+Threads: 12 	| Time: 590 ms
+Threads: 16 	| Time: 493 ms
+Threads: 20 	| Time: 523 ms
+------------------------------------------------
+
+SUCCESS: The matrix was calculated correctly!

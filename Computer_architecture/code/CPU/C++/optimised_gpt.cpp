@@ -37,8 +37,11 @@ void multiply_optimized(int N, const vector<double>& A,
     }
 }
 
-int main() {
-    int N = 4096;
+int main(int argc, char* argv[]) {
+    int threads = stoi(argv[1]);
+    int N = stoi(argv[2]);
+
+    omp_set_num_threads(threads);
 
     cout << "Allocating memory..." << endl;
 
