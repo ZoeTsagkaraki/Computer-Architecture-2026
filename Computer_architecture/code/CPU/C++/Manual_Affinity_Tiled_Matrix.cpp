@@ -3,21 +3,21 @@
 #include <thread>
 #include <chrono>
 #include <algorithm>
-#include <windows.h> // Για το SetThreadAffinityMask
+#include <windows.h> // For the SetThreadAffinityMask TESTTTTTTTT
 
 using namespace std;
 using namespace std::chrono;
 
 #define BLOCK_SIZE 32
 
-// Η συνάρτηση που εκτελεί κάθε thread (Workload)
+// The function that each thread executes (Workload)
 void multiply_tiled_worker(int thread_id, int num_threads, int N, const double* A, const double* B, double* C) {
-    // Υπολογισμός του εύρους (rows) που αναλαμβάνει αυτό το thread
-    int rows_per_thread = N / num_threads;
+    // Calculate the range (rows) that this thread is responsible 
+    for int rows_per_thread = N / num_threads;
     int row_start = thread_id * rows_per_thread;
     int row_end = (thread_id == num_threads - 1) ? N : row_start + rows_per_thread;
 
-    // Tiling logic (Όπως στον optimized κώδικά σου)
+    // Tiling logic (Like the optimized code)
     for (int ii = row_start; ii < row_end; ii += BLOCK_SIZE) {
         for (int jj = 0; jj < N; jj += BLOCK_SIZE) {
             for (int kk = 0; kk < N; kk += BLOCK_SIZE) {
@@ -52,16 +52,16 @@ int main(int argc, char* argv[]) {
     vector<thread> threads;
     auto start = high_resolution_clock::now();
 
-    // Δημιουργία Threads και εφαρμογή Affinity (όπως ο συμφοιτητής σου)
-    for (int i = 0; i < num_threads; i++) {
+// Create Threads and apply Affinity (as your teammate did)    
+        for (int i = 0; i < num_threads; i++) {
         threads.emplace_back(multiply_tiled_worker, i, num_threads, N, A.data(), B.data(), C.data());
 
-        // Κλείδωμα κάθε thread σε έναν συγκεκριμένο πυρήνα (Affinity)
-        DWORD_PTR mask = (DWORD_PTR)1 << (i % 20); // 20 είναι οι πυρήνες σου
+// Pin each thread to a specific core (Affinity)        
+        DWORD_PTR mask = (DWORD_PTR)1 << (i % 20); // 20 cores
         SetThreadAffinityMask((HANDLE)threads.back().native_handle(), mask);
     }
 
-    // Αναμονή για να τελειώσουν όλα τα threads
+    // Wait for all threads to finish
     for (auto& t : threads) {
         t.join();
     }
