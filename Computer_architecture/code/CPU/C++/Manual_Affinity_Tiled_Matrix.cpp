@@ -3,7 +3,7 @@
 #include <thread>
 #include <chrono>
 #include <algorithm>
-#include <windows.h> // For the SetThreadAffinityMask TESTTTTTTTT
+#include <windows.h> // For the SetThreadAffinityMask 
 
 using namespace std;
 using namespace std::chrono;
