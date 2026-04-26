@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Σενάριο μίας συγκεκριμένης ρύθμισης
+# Script for a single configuration
 if [ "$#" -ne 4 ]; then
     echo "Error: Illegal number of parameters, please provide:"
     echo " 1. Executable path"
