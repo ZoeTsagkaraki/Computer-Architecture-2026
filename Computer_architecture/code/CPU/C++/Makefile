@@ -1,10 +1,10 @@
-# Ορισμός του compiler
+# Compiler definition
 CC = g++
 
-# Παράμετροι για OpenMP και βελτιστοποίηση O3
+# Compiler flags for OpenMP and O3 optimization
 CFLAGS = -O3 -fopenmp
 
-# Το όνομα του δικού σου εκτελέσιμου
+# Name of the executable
 TARGET = matrix_bash
 
 all: $(TARGET)
