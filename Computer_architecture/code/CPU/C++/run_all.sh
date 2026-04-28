@@ -12,19 +12,19 @@ time_og=$(./matrix_arch_og.exe 1 2048)
 echo "1,2048,$time_og" >> results_og.csv
 
 echo "Running Arch2..."
-for t in 1 2 4 8 16 20; do
+for t in {1..20}; do
    time_arch2=$(./matrix_arch_2.exe $t 2048)
    echo "$t,2048,$time_arch2" >> results_arch2.csv
 done
 
 echo "Running Arch3..."
-for t in 1 2 4 8 16 20; do
+for t in {1..20}; do
    time_arch3=$(./matrix_arch_3.exe $t 2048)
    echo "$t,2048,$time_arch3" >> results_arch3.csv
 done
 
 echo "Running Optimised..."
-for t in 1 2 4 8 16 20; do
+for t in {1..20}; do
    time_opt=$(./matrix_optimised_gpt.exe $t 2048)
    echo "$t,2048,$time_opt" >> results_optimised.csv
 done
