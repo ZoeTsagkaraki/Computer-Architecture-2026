@@ -23,8 +23,14 @@ void multiply_2D_naive(int N, const vector<vector<double>>& A,
     }
 }
 
-int main() {
-    int N = 2048;
+int main(int argc, char* argv[]) {
+    // Διαβάζει τα ορίσματα από το bash script
+    int threads = stoi(argv[1]);
+    int N = stoi(argv[2]);
+
+    omp_set_num_threads(threads); // Ορίζει τα threads
+
+   
 
     cout << "Allocating memory for matrices " << N << "x" << N << "..." << endl;
 

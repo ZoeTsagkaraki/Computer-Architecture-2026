@@ -37,7 +37,7 @@ for ((NUM_THREADS = 1; NUM_THREADS <= ${MAX_THREADS}; NUM_THREADS++)); do
         echo -n "${NUM_THREADS},${i},${MATRIX_SIZE}," >> ${OUTPUT_FILE}
         
         # Run the C++ program and append its output to the end of the line!
-        ./${EXECUTABLE} ${NUM_THREADS} ${MATRIX_SIZE} >> ${OUTPUT_FILE} 
+        ./${EXECUTABLE} ${NUM_THREADS} ${MATRIX_SIZE} 0 >> ${OUTPUT_FILE} 
     done
 done
 

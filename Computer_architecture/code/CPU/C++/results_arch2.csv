@@ -1,37 +1,121 @@
-num_threads,matrix_size,execution_time_ms
-1,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19365 milliseconds.
-Performing correctness check...
-the matrix is correct
-2,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19326 milliseconds.
-Performing correctness check...
-the matrix is correct
-4,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19200 milliseconds.
-Performing correctness check...
-the matrix is correct
-8,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19295 milliseconds.
-Performing correctness check...
-the matrix is correct
-16,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19234 milliseconds.
-Performing correctness check...
-the matrix is correct
-20,2048,Allocating memory for matrices 2048x2048...
-Initializing matrices with manual loops...
-The serial calculation starts ...
-The execution time is 19467 milliseconds.
-Performing correctness check...
-the matrix is correct
+num_threads,matrix_size,execution_time_ms,,,,,,,,,,,
+1,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,Threads,Execution Time (ms),Cumulative Speedup
+The serial calculation starts ...,,,,,,,,,,,1,"144,898",0.93
+The execution time is 144898 milliseconds.,,,,,,,,,,,2,"25,809",5.2
+Performing correctness check...,,,,,,,,,,,3,"25,246",5.32
+the matrix is correct,,,,,,,,,,,4,"25,844",5.2
+2,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,5,"26,084",5.15
+Initializing matrices with manual loops...,,,,,,,,,,,6,"24,917",5.39
+The serial calculation starts ...,,,,,,,,,,,7,"25,540",5.26
+The execution time is 25809 milliseconds.,,,,,,,,,,,8,"26,013",5.16
+Performing correctness check...,,,,,,,,,,,9,"25,806",5.2
+the matrix is correct,,,,,,,,,,,10,"45,049",2.98
+3,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,11,"25,548",5.26
+Initializing matrices with manual loops...,,,,,,,,,,,12,"35,260",3.81
+The serial calculation starts ...,,,,,,,,,,,13,"67,982",1.98
+The execution time is 25246 milliseconds.,,,,,,,,,,,14,"26,866",5
+Performing correctness check...,,,,,,,,,,,15,"25,703",5.23
+the matrix is correct,,,,,,,,,,,16,"25,611",5.24
+4,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,17,"25,478",5.27
+Initializing matrices with manual loops...,,,,,,,,,,,18,"25,886",5.19
+The serial calculation starts ...,,,,,,,,,,,19,"25,577",5.25
+The execution time is 25844 milliseconds.,,,,,,,,,,,20,"25,799",5.21
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+5,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 26084 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+6,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 24917 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+7,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25540 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+8,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 26013 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+9,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25806 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+10,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 45049 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+11,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25548 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+12,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 35260 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+13,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 67982 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+14,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 26866 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+15,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25703 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+16,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25611 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+17,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25478 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+18,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25886 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+19,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25577 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,
+20,2048,Allocating memory for matrices 2048x2048...,,,,,,,,,,,
+Initializing matrices with manual loops...,,,,,,,,,,,,,
+The serial calculation starts ...,,,,,,,,,,,,,
+The execution time is 25799 milliseconds.,,,,,,,,,,,,,
+Performing correctness check...,,,,,,,,,,,,,
+the matrix is correct,,,,,,,,,,,,,

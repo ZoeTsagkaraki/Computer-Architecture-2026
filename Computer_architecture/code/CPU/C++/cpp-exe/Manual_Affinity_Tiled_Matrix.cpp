@@ -12,8 +12,15 @@ using namespace std::chrono;
 
 // The function that each thread executes (Workload)
 void multiply_tiled_worker(int thread_id, int num_threads, int N, const double* A, const double* B, double* C) {
-    // Calculate the range (rows) that this thread is responsible 
-    for int rows_per_thread = N / num_threads;
+    
+    // --- Η ΔΙΟΡΘΩΣΗ 2: Το Affinity μπήκε ΕΔΩ ---
+    // Το κάθε thread "καρφώνει" τον εαυτό του στον σωστό πυρήνα
+    DWORD_PTR mask = (DWORD_PTR)1 << (thread_id % 20); // Υποθέτουμε 20 cores
+    SetThreadAffinityMask(GetCurrentThread(), mask);
+    // -------------------------------------------
+
+    // --- Η ΔΙΟΡΘΩΣΗ 1: Έφυγε το περιττό 'for' ---
+    int rows_per_thread = N / num_threads;
     int row_start = thread_id * rows_per_thread;
     int row_end = (thread_id == num_threads - 1) ? N : row_start + rows_per_thread;
 
@@ -52,13 +59,9 @@ int main(int argc, char* argv[]) {
     vector<thread> threads;
     auto start = high_resolution_clock::now();
 
-// Create Threads and apply Affinity (as your teammate did)    
-        for (int i = 0; i < num_threads; i++) {
+    // Create Threads (το Affinity το αναλαμβάνουν μόνα τους πλέον)
+    for (int i = 0; i < num_threads; i++) {
         threads.emplace_back(multiply_tiled_worker, i, num_threads, N, A.data(), B.data(), C.data());
-
-// Pin each thread to a specific core (Affinity)        
-        DWORD_PTR mask = (DWORD_PTR)1 << (i % 20); // 20 cores
-        SetThreadAffinityMask((HANDLE)threads.back().native_handle(), mask);
     }
 
     // Wait for all threads to finish
@@ -69,6 +72,7 @@ int main(int argc, char* argv[]) {
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<milliseconds>(stop - start);
 
+    // Το 0 τυπώνει μόνο τον αριθμό για το CSV, το 1 τυπώνει κείμενο
     if (mode == 1) {
         cout << "Manual Affinity Version - Threads: " << num_threads << " - Time: " << duration.count() << " ms" << endl;
     } else {
