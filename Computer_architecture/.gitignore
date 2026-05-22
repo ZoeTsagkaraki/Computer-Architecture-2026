@@ -1,0 +1,7 @@
+# IDE Settings
+.vscode/
+
+# Compiled Executables
+code/CPU/C++/*.exe
+
+code/CPU/C++/*.out
